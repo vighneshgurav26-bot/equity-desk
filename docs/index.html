@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equity Desk · MTF · ₹2,00,000</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B2027; --ink-2:#102B34; --ink-3:#16404D;
+  --rule:rgba(160,206,214,.16); --rule-hi:rgba(160,206,214,.34);
+  --chalk:#E8F1F2; --chalk-dim:#8FAAB0;
+  --saffron:#FF9933; --up:#1FB877; --down:#E8556D;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --disp:'Bricolage Grotesque',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ink);color:var(--chalk);font-family:var(--mono);
+  font-size:14px;line-height:1.55;
+  background-image:
+    linear-gradient(var(--rule) 1px,transparent 1px),
+    linear-gradient(90deg,var(--rule) 1px,transparent 1px);
+  background-size:44px 44px;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:22px 18px 80px}
+a{color:var(--saffron)}
+
+/* ---------- masthead ---------- */
+.mast{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;
+  justify-content:space-between;border-bottom:2px solid var(--rule-hi);
+  padding-bottom:14px}
+h1{font-family:var(--disp);font-weight:800;font-size:clamp(28px,6vw,46px);
+  letter-spacing:-.02em;margin:0;line-height:.95}
+h1 em{font-style:normal;color:var(--saffron)}
+.sub{color:var(--chalk-dim);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;margin-top:6px}
+.pulse{display:inline-flex;align-items:center;gap:8px;font-size:12px;
+  letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--rule-hi);
+  padding:6px 11px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--chalk-dim)}
+.dot.on{background:var(--up);box-shadow:0 0 0 0 rgba(31,184,119,.6);
+  animation:p 2.4s infinite}
+@keyframes p{70%{box-shadow:0 0 0 9px rgba(31,184,119,0)}
+  100%{box-shadow:0 0 0 0 rgba(31,184,119,0)}}
+@media (prefers-reduced-motion:reduce){.dot.on{animation:none}}
+
+/* ---------- numbers ---------- */
+.figures{display:grid;gap:1px;background:var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:22px 0}
+.fig{background:var(--ink-2);padding:15px 16px}
+.fig .k{font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--chalk-dim)}
+.fig .v{font-family:var(--disp);font-weight:800;font-size:26px;
+  letter-spacing:-.02em;margin-top:3px}
+.up{color:var(--up)}.down{color:var(--down)}.mute{color:var(--chalk-dim)}
+
+/* ---------- section frame ---------- */
+section{margin:34px 0}
+h2{font-family:var(--disp);font-weight:600;font-size:13px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--chalk-dim);margin:0 0 12px;
+  display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:var(--rule-hi)}
+.panel{border:1px solid var(--rule-hi);background:var(--ink-2);padding:16px}
+
+/* ---------- signature: the decision trail ---------- */
+.trail{display:grid;gap:1px;background:var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.stage{background:var(--ink-2);padding:14px 15px;position:relative;
+  min-height:112px}
+.stage .n{font-size:10px;color:var(--saffron);letter-spacing:.2em}
+.stage .t{font-family:var(--disp);font-weight:600;font-size:14px;
+  letter-spacing:.06em;text-transform:uppercase;margin:4px 0 8px}
+.stage .b{font-size:12px;color:var(--chalk-dim);line-height:1.5;
+  max-height:120px;overflow:auto}
+.stage.hot{background:var(--ink-3)}
+.stage.hot .b{color:var(--chalk)}
+.duel{display:grid;gap:1px;background:var(--rule);
+  grid-template-columns:1fr 1fr;margin-top:1px}
+.duel>div{background:var(--ink-2);padding:14px 15px}
+.duel .lab{font-family:var(--disp);font-weight:600;font-size:12px;
+  letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.duel .bull .lab{color:var(--up)}
+.duel .bear .lab{color:var(--down)}
+.duel p{margin:0;font-size:12.5px;color:var(--chalk-dim)}
+@media(max-width:620px){.duel{grid-template-columns:1fr}}
+
+/* ---------- tables ---------- */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:12.5px;min-width:640px}
+td:last-child{white-space:normal;max-width:320px;color:var(--chalk-dim)}
+th{text-align:left;font-weight:500;color:var(--chalk-dim);font-size:10px;
+  letter-spacing:.14em;text-transform:uppercase;padding:8px 10px;
+  border-bottom:1px solid var(--rule-hi);white-space:nowrap}
+td{padding:8px 10px;border-bottom:1px solid var(--rule);white-space:nowrap}
+tbody tr:hover{background:var(--ink-3)}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+
+/* ---------- feed ---------- */
+.feed{max-height:460px;overflow-y:auto}
+.ev{display:grid;grid-template-columns:78px 92px 1fr;gap:10px;
+  padding:9px 0;border-bottom:1px solid var(--rule);font-size:12.5px}
+.ev time{color:var(--chalk-dim);font-size:11px}
+.tag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  align-self:start;padding:2px 6px;border:1px solid var(--rule-hi);
+  text-align:center}
+.tag.ENTRY,.tag.EXIT{border-color:var(--saffron);color:var(--saffron)}
+.tag.RISK{border-color:var(--down);color:var(--down)}
+.tag.STRATEGY,.tag.REVIEW{border-color:var(--up);color:var(--up)}
+.ev .d{color:var(--chalk-dim);white-space:pre-wrap;font-size:12px}
+@media(max-width:620px){.ev{grid-template-columns:1fr;gap:3px}}
+
+pre{white-space:pre-wrap;word-break:break-word;font-size:12px;
+  color:var(--chalk-dim);margin:0}
+.empty{color:var(--chalk-dim);font-size:13px;padding:18px 0}
+footer{margin-top:50px;padding-top:14px;border-top:1px solid var(--rule);
+  color:var(--chalk-dim);font-size:11px;letter-spacing:.08em}
+:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <h1>EQUITY <em>DESK</em></h1>
+      <div class="sub" id="strapline">NSE MTF stock swing · technicals-only · ₹2,00,000</div>
+    </div>
+    <div class="pulse"><span class="dot" id="dot"></span><span id="status">loading</span></div>
+  </header>
+
+  <div class="figures" id="figures"></div>
+
+  <section>
+    <h2>Last decision</h2>
+    <div class="trail" id="trail"></div>
+    <div class="duel" id="duel"></div>
+  </section>
+
+  <section>
+    <h2>What it will trade right now</h2>
+    <div class="panel scroll" id="screen"></div>
+  </section>
+
+  <section>
+    <h2>Equity</h2>
+    <div class="panel"><div id="spark"></div></div>
+  </section>
+
+  <section>
+    <h2>Open positions</h2>
+    <div class="panel scroll" id="open"></div>
+  </section>
+
+  <section>
+    <h2>Closed trades</h2>
+    <div class="panel scroll" id="closed"></div>
+  </section>
+
+  <section>
+    <h2>Current strategy</h2>
+    <div class="panel" id="strategy"></div>
+  </section>
+
+  <section>
+    <h2>What it learned</h2>
+    <div class="panel" id="reviews"></div>
+  </section>
+
+  <section>
+    <h2>Activity</h2>
+    <div class="panel feed" id="feed"></div>
+  </section>
+
+  <footer>Paper trading only. No orders are sent to any broker.
+    Rebuilt each cycle from <code>data.json</code>.</footer>
+</div>
+
+<script>
+const R = n => n==null||isNaN(n) ? "—" :
+  "₹" + Math.round(n).toLocaleString("en-IN");
+const sign = n => n>0 ? "up" : n<0 ? "down" : "mute";
+const esc = s => String(s??"").replace(/[&<>]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const el = id => document.getElementById(id);
+
+fetch("data.json?" + Date.now()).then(r=>r.json()).then(render).catch(()=>{
+  el("status").textContent="no data yet";
+  el("figures").innerHTML='<div class="fig"><div class="k">waiting</div>'+
+    '<div class="v" style="font-size:15px">Run the desk once to populate this page.</div></div>';
+});
+
+function render(d){
+  const live = !!d.market_open;
+  el("dot").className = "dot" + (live?" on":"");
+  el("status").textContent = live ? "market open" : "market closed";
+  const s = d.stats||{}, st = d.strategy||{};
+  el("strapline").textContent =
+    `strategy v${st.version} · ${st.name} · ${(d.generated||"").replace("T"," ")}`;
+
+  const pnl = (d.equity||d.capital) - d.capital;
+  el("figures").innerHTML = [
+    ["Equity", R(d.equity), ""],
+    ["Net P&L", (pnl>=0?"+":"−")+R(Math.abs(pnl)), sign(pnl)],
+    ["Trades", s.trades ?? 0, ""],
+    ["Win rate", s.win_rate_pct!=null ? s.win_rate_pct+"%" : "—", ""],
+    ["Expectancy", s.expectancy!=null ? R(s.expectancy) : "—", sign(s.expectancy)],
+    ["Charges paid", R(s.total_costs), "down"],
+    ["Max drawdown", s.max_dd_pct!=null ? s.max_dd_pct+"%" : "—", ""],
+    ["Open", (d.open||[]).length, ""],
+  ].map(([k,v,c])=>`<div class="fig"><div class="k">${k}</div>
+      <div class="v ${c}">${v}</div></div>`).join("");
+
+  // ---- decision trail (the signature) ----
+  const J = d.journal||[];
+  const last = k => J.find(j=>j.kind===k) || null;
+  const research = last("RESEARCH"), debate = last("DEBATE"),
+        risk = last("RISK"), entry = last("ENTRY"), scan = last("SCAN");
+  const stages = [
+    ["01","Collect", d.features ? Object.keys(d.features).join(" · ") +
+        (d.india_vix?`\nIndia VIX ${d.india_vix}`:"") : "no snapshot this cycle"],
+    ["02","Research", research ? research.detail : "no brief yet"],
+    ["03","Debate", debate ? debate.headline : (scan? scan.detail : "no signal yet")],
+    ["04","Risk gate", risk ? risk.headline+"\n"+risk.detail : "nothing reached the gate"],
+    ["05","MTF paper fill", entry ? entry.headline+"\n"+entry.detail : "no position taken"],
+  ];
+  el("trail").innerHTML = stages.map(([n,t,b],i)=>
+    `<div class="stage${(i===4&&entry)||(i===3&&risk&&!entry)?" hot":""}">
+       <div class="n">${n}</div><div class="t">${t}</div>
+       <div class="b">${esc(b)}</div></div>`).join("");
+
+  let bull="", bear="";
+  if(debate){ const m=/BULL:([\s\S]*?)BEAR:([\s\S]*)/.exec(debate.detail||"");
+    if(m){ bull=m[1].trim(); bear=m[2].trim(); } }
+  el("duel").innerHTML = (bull||bear) ?
+    `<div class="bull"><div class="lab">Bull case</div><p>${esc(bull)}</p></div>
+     <div class="bear"><div class="lab">Bear case</div><p>${esc(bear)}</p></div>` : "";
+
+  // ---- liquidity x volatility screen ----
+  const scr = J.find(j=>j.kind==="SCREEN");
+  let rank = [];
+  try { rank = JSON.parse(scr?.payload||"{}").ranking||[]; } catch(e){}
+  el("screen").innerHTML = rank.length ? table(
+    ["Underlying","Verdict","Score","Liquidity","Friction","Liquid strikes","Why not"],
+    rank.map(r=>[r.symbol,
+      {v:r.tradable?"trading":"held back", c:r.tradable?"up":"mute"},
+      r.score, r.liquidity_score??"—",
+      r.avg_friction_pct!=null ? r.avg_friction_pct+"%" : "—",
+      r.liquid_atm_contracts??0,
+      (r.why&&r.why.length)?r.why[0]:""]))
+    : '<div class="empty">No screen yet — it runs each cycle while the market is open.</div>';
+
+  // ---- equity sparkline ----
+  const c = d.curve||[];
+  if(c.length>1){
+    const v=c.map(p=>p.equity), lo=Math.min(...v,d.capital), hi=Math.max(...v,d.capital);
+    const W=1000,H=140,pad=4, rng=(hi-lo)||1;
+    const pt=(y,i)=>[pad+i*(W-2*pad)/(v.length-1), H-pad-(y-lo)/rng*(H-2*pad)];
+    const path=v.map((y,i)=>pt(y,i).map(n=>n.toFixed(1)).join(",")).join(" L");
+    const base=H-pad-(d.capital-lo)/rng*(H-2*pad);
+    el("spark").innerHTML=
+      `<svg viewBox="0 0 ${W} ${H}" width="100%" height="140"
+            preserveAspectRatio="none" role="img"
+            aria-label="Equity curve, ${v.length} marks">
+        <line x1="0" y1="${base.toFixed(1)}" x2="${W}" y2="${base.toFixed(1)}"
+              stroke="rgba(160,206,214,.35)" stroke-dasharray="3 5"/>
+        <path d="M${path}" fill="none" stroke="#FF9933" stroke-width="2"
+              vector-effect="non-scaling-stroke"/>
+      </svg>
+      <div class="k mute" style="font-size:10px;letter-spacing:.14em;margin-top:6px">
+        ${esc(c[0].ts)} → ${esc(c[c.length-1].ts)} · dashed line = starting capital</div>`;
+  } else el("spark").innerHTML='<div class="empty">Not enough marks yet.</div>';
+
+  // ---- tables ----
+  el("open").innerHTML = (d.marked&&d.marked.length) ? table(
+    ["Contract","Lots","Entry","Mark","Stop","Target","Unrealised"],
+    d.marked.map(t=>[t.tradingsymbol,t.lots,t.entry_px,
+      (t.live_px??"—"),t.stop_px,t.target_px,
+      {v:(t.upnl>=0?"+":"−")+R(Math.abs(t.upnl||0)),c:sign(t.upnl)}]))
+    : '<div class="empty">Flat.</div>';
+
+  el("closed").innerHTML = (d.closed&&d.closed.length) ? table(
+    ["Entry","Contract","In","Out","Why","Gross","Charges","Net"],
+    d.closed.map(t=>[(t.entry_ts||"").replace("T"," ").slice(5),
+      t.tradingsymbol,t.entry_px,t.exit_px,t.exit_reason,
+      R(t.gross_pnl),R(t.costs),
+      {v:(t.net_pnl>=0?"+":"−")+R(Math.abs(t.net_pnl||0)),c:sign(t.net_pnl)}]))
+    : '<div class="empty">No closed trades yet.</div>';
+
+  // ---- strategy ----
+  const bt = st.backtest||{};
+  el("strategy").innerHTML =
+    `<p style="margin:0 0 10px">${esc(st.rationale||"—")}</p>
+     <p class="mute" style="font-size:12px;margin:0 0 12px">
+       Promoted on: ${esc(bt.mode||"—")} backtest, ${bt.trades??0} trades,
+       expectancy ${bt.expectancy??"—"}, PF ${bt.profit_factor??"—"}
+       (confidence ${esc(bt.confidence||"—")})</p>
+     <pre>${esc(JSON.stringify(st.spec||{},null,1))}</pre>`;
+
+  el("reviews").innerHTML = (d.reviews&&d.reviews.length) ? d.reviews.map(r=>
+    `<div style="border-bottom:1px solid var(--rule);padding:11px 0">
+       <div class="k mute" style="font-size:10px;letter-spacing:.14em">
+         ${esc(r.ts)} · ${esc(r.trigger)} · v${r.from_version}→v${r.to_version}</div>
+       <p style="margin:6px 0 4px">${esc(r.lessons||"")}</p>
+       <p class="mute" style="margin:0;font-size:12px">${esc(r.changes||"")}</p>
+     </div>`).join("") : '<div class="empty">No reviews yet — it reviews after 10 closed trades, or 30 idle hours.</div>';
+
+  el("feed").innerHTML = J.map(j=>
+    `<div class="ev"><time>${esc((j.ts||"").replace("T"," ").slice(5,16))}</time>
+      <span class="tag ${esc(j.kind)}">${esc(j.kind)}</span>
+      <div><div>${esc(j.headline)}</div>
+      ${j.detail?`<div class="d">${esc(j.detail)}</div>`:""}</div></div>`).join("")
+      || '<div class="empty">Nothing logged yet.</div>';
+}
+
+function table(head, rows){
+  return `<table><thead><tr>${head.map((h,i)=>
+    `<th class="${i>1?'num':''}">${esc(h)}</th>`).join("")}</tr></thead><tbody>`
+    + rows.map(r=>`<tr>${r.map((c,i)=>{
+        const o = (c&&typeof c==="object") ? c : {v:c,c:""};
+        return `<td class="${i>1?'num ':''}${o.c}">${esc(o.v)}</td>`;
+      }).join("")}</tr>`).join("") + "</tbody></table>";
+}
+</script>
+</body>
+</html>
