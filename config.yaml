@@ -1,0 +1,88 @@
+# ============================================================
+#  EQUITY DESK - Rs 2,00,000 - MTF stock swing/intraday
+#  Technicals-only. Separate desk from the two options desks.
+# ============================================================
+
+account:
+  starting_capital: 200000.0
+  currency: "INR"
+
+# --- MTF leverage. Zerodha lends up to 80% on eligible stocks; we stay
+#     conservative. "Moderate" risk = use leverage but never max it. ---
+mtf:
+  default_margin_pct: 40.0          # client puts 40%, Zerodha funds 60% (1.67x)
+  max_gross_exposure_pct: 70.0      # of capital deployed as own-margin (your 70% rule)
+  max_leverage: 2.0                 # hard cap on notional / equity
+
+risk_ceiling:
+  max_risk_per_trade_pct: 1.5       # % of EQUITY at risk to the stop
+  max_positions: 5                  # your "up to 5 stocks" rule
+  max_per_stock_pct: 20.0           # of capital in own-margin, one name
+  max_daily_loss_pct: 3.0
+  max_weekly_loss_pct: 6.0
+  max_hold_days: 5                  # your swing limit - hard, forces exit
+  kill_switch_drawdown_pct: 12.0
+
+session:
+  open: "09:15"
+  close: "15:30"
+  no_entry_before: "09:30"          # let the open settle
+  no_entry_after: "15:00"
+  intraday_square_off: "15:15"      # for positions flagged intraday-only
+
+# --- Nifty 50 large caps, all MTF-eligible with deep books. ---
+universe:
+  stocks: ["RELIANCE", "HDFCBANK", "ICICIBANK", "INFY", "TCS", "SBIN",
+           "AXISBANK", "KOTAKBANK", "BHARTIARTL", "LT", "ITC", "BAJFINANCE",
+           "MARUTI", "TATAMOTORS", "TATASTEEL", "HINDALCO", "SUNPHARMA",
+           "TITAN", "ASIANPAINT", "HCLTECH", "WIPRO", "ULTRACEMCO",
+           "NESTLEIND", "POWERGRID", "NTPC"]
+  max_watch: 25
+  max_new_per_cycle: 2
+
+# --- Only trade clean technical structure. ---
+technical_gate:
+  min_history_days: 120
+  min_phase_confidence: 0.55
+  require_volume_confirming: true
+  min_reward_risk_to_levels: 1.8    # nearest resistance vs nearest support
+  min_atr_pct: 1.0                  # dead stocks don't pay for MTF interest
+  max_atr_pct: 6.0                  # too wild for moderate risk
+  rsi_overbought: 72
+  rsi_oversold: 28
+
+# --- Liquidity: cash equity needs turnover, not option OI. ---
+liquidity:
+  min_price: 50.0                   # penny stocks excluded
+  min_avg_turnover_cr: 25.0         # Rs crore/day 20-day average
+  max_spread_pct: 0.20
+  max_share_of_avg_volume: 0.01     # our order < 1% of daily volume
+
+costs:
+  brokerage_pct: 0.3
+  brokerage_cap: 20.0
+  stt_pct: 0.1                      # delivery, both sides
+  exchange_pct: 0.00297
+  sebi_pct: 0.0001
+  stamp_buy_pct: 0.015
+  gst_pct: 18.0
+  dp_charge_per_scrip: 15.34
+  pledge_unpledge_fee: 15.0
+  mtf_interest_pct_per_day: 0.04    # ~14.6% p.a. on funded amount
+  slippage_pct: 0.05
+
+market:
+  risk_free_rate: 0.065
+
+data:
+  provider: "auto"                  # kite | yahoo | auto
+  snapshot_interval_sec: 300        # swing desk doesn't need minute cadence
+
+brain:
+  model: "claude-sonnet-4-6"
+  review_every_n_trades: 8
+  review_after_idle_hours: 72       # swing desk is slow by nature
+  promotion:
+    min_backtest_trades: 15
+    require_positive_expectancy: true
+  max_tokens: 4000
