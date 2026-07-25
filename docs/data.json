@@ -1,0 +1,128 @@
+{
+ "generated": "",
+ "capital": 200000.0,
+ "equity": 200000.0,
+ "stats": {
+  "trades": 0,
+  "note": "no trades"
+ },
+ "open": [],
+ "closed": [],
+ "curve": [],
+ "strategy": {
+  "version": 1,
+  "name": "Wyckoff_Accumulation_Markup_VolConfirm",
+  "rationale": "Technicals-only equity swing on MTF. Buys stocks that are in Wyckoff accumulation turning to markup, above the 200-DMA, with volume confirming price and a nearest-resistance/nearest-support reward:risk of at least 1.8. Sizing is off the technical stop below support; the 5-day cap is hard because MTF interest turns a slow winner into a loser. No fundamentals \u2014 this desk was deliberately scoped to what can be computed from price and volume alone, rather than pretending to read financials it cannot reach.",
+  "spec": {
+   "name": "Wyckoff_Accumulation_Markup_VolConfirm",
+   "rationale": "Technicals-only equity swing on MTF. Buys stocks that are in Wyckoff accumulation turning to markup, above the 200-DMA, with volume confirming price and a nearest-resistance/nearest-support reward:risk of at least 1.8. Sizing is off the technical stop below support; the 5-day cap is hard because MTF interest turns a slow winner into a loser. No fundamentals \u2014 this desk was deliberately scoped to what can be computed from price and volume alone, rather than pretending to read financials it cannot reach.",
+   "universe": [
+    "RELIANCE",
+    "HDFCBANK",
+    "ICICIBANK",
+    "INFY",
+    "TCS",
+    "LT",
+    "SBIN",
+    "AXISBANK"
+   ],
+   "entry": {
+    "all": [
+     {
+      "feature": "above_200dma",
+      "op": ">",
+      "value": 0.5
+     },
+     {
+      "feature": "phase_confidence",
+      "op": ">=",
+      "value": 0.55
+     },
+     {
+      "feature": "volume_confirming",
+      "op": ">",
+      "value": 0.5
+     },
+     {
+      "feature": "reward_risk_to_levels",
+      "op": ">=",
+      "value": 1.8
+     },
+     {
+      "feature": "atr_pct",
+      "op": "between",
+      "value": [
+       1.0,
+       6.0
+      ]
+     },
+     {
+      "feature": "rsi",
+      "op": "between",
+      "value": [
+       40,
+       72
+      ]
+     }
+    ],
+    "any": [
+     {
+      "feature": "wyckoff_phase_score",
+      "op": ">=",
+      "value": 1.0
+     },
+     {
+      "feature": "wyckoff_phase_score",
+      "op": "==",
+      "value": 0.5
+     }
+    ],
+    "none": [
+     {
+      "feature": "rsi",
+      "op": ">",
+      "value": 72
+     },
+     {
+      "feature": "trend_up",
+      "op": "<",
+      "value": 0.0
+     }
+    ]
+   },
+   "sizing": {
+    "risk_per_trade_pct": 1.5
+   },
+   "risk": {
+    "max_positions": 5,
+    "max_hold_days": 5,
+    "intraday_fraction": 0.0
+   },
+   "direction": "LONG_ONLY"
+  },
+  "backtest": {
+   "mode": "seed"
+  }
+ },
+ "reviews": [],
+ "journal": [
+  {
+   "id": 2,
+   "ts": "2026-07-25T06:09:53+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Sat 25 Jul 06:09 IST",
+   "payload": "{}"
+  },
+  {
+   "id": 1,
+   "ts": "2026-07-25T06:09:53.788888+05:30",
+   "kind": "STRATEGY",
+   "symbol": "",
+   "headline": "Seeded strategy v1",
+   "detail": "Wyckoff_Accumulation_Markup_VolConfirm",
+   "payload": "{}"
+  }
+ ]
+}
