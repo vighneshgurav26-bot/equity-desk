@@ -116,6 +116,15 @@
  "reviews": [],
  "journal": [
   {
+   "id": 8,
+   "ts": "2026-07-27T19:25:25+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Mon 27 Jul 19:25 IST",
+   "payload": "{}"
+  },
+  {
    "id": 7,
    "ts": "2026-07-27T16:26:37+05:30",
    "kind": "IDLE",
