@@ -1,0 +1,26 @@
+name: install-v2
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests PyYAML kiteconnect
+      - run: python install_v2.py
+      - name: Commit
+        run: |
+          git config user.name "desk-bot"
+          git config user.email "desk@users.noreply.github.com"
+          git add -A state
+          git commit -m "install v3 relaxed strategy" || true
+          git pull --rebase --autostash || true
+          git push || true
