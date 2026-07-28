@@ -1,8 +1,8 @@
 # Equity Desk — MTF — Trading Journal
 
-**v1 — Wyckoff_Accumulation_Markup_VolConfirm**
+**v2 — Wyckoff_v3_WideOpen**
 
-Technicals-only equity swing on MTF. Buys stocks that are in Wyckoff accumulation turning to markup, above the 200-DMA, with volume confirming price and a nearest-resistance/nearest-support reward:risk of at least 1.8. Sizing is off the technical stop below support; the 5-day cap is hard because MTF interest turns a slow winner into a loser. No fundamentals — this desk was deliberately scoped to what can be computed from price and volume alone, rather than pretending to read financials it cannot reach.
+v3: phase_confidence 0.45->0.35, R:R 1.6->1.3, RSI band 40-72 -> 35-78, ATR band 1.0-6.0 -> 0.7-8.0. The 200-DMA trend filter moves into the any-of tier (50-DMA now also qualifies) so early trend turns are catchable. Only hard blocks left: no confirmed markdown phase, no RSI above 78. Position limits (5), 70% exposure cap, 5-day max hold and 1.5% risk are UNCHANGED — MTF interest makes those non-negotiable.
 
 ## Performance
 
