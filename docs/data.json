@@ -187,6 +187,15 @@
  ],
  "journal": [
   {
+   "id": 44,
+   "ts": "2026-07-30T18:41:32+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Thu 30 Jul 18:41 IST",
+   "payload": "{}"
+  },
+  {
    "id": 43,
    "ts": "2026-07-30T16:59:48+05:30",
    "kind": "IDLE",
