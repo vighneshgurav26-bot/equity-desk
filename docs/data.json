@@ -186,6 +186,17 @@
  },
  "reviews": [
   {
+   "id": 7,
+   "ts": "2026-08-03T19:29:22+05:30",
+   "trigger": "auto",
+   "from_version": 2,
+   "to_version": 2,
+   "stats": "{\"trades\": 0, \"note\": \"no trades\"}",
+   "lessons": "Wyckoff_v3_WideOpen has zero trades, so there is no execution history to judge \u2014 every parameter relaxation (lower phase_confidence, wider RSI band, looser ATR band, softened trend filter) was made speculatively to increase trade frequency, but we cannot confirm whether those relaxations actually capture good setups or merely lower the bar enough to let marginal ones through. The 'any-of' tier now contains six conditions, at least one of which (above_50dma > 0.5) is trivially true for a large fraction of large-caps in any uptrend, meaning the gate may be nearly open by default. With no closed trades, MTF interest drag, stop tightness, and exit-reason mix are all untestable \u2014 the system is a hypothesis, not a tested strategy. The risk parameters (1.5% risk/trade, 5-day max, 70% cap) are structurally sound given MTF economics, but they protect nothing if entries never fire or fire on weak setups.",
+   "changes": "1) Run the strategy in paper mode for at least 15-20 trade signals before further parameter changes \u2014 without a sample, every tweak is speculation. 2) Tighten the 'any-of' tier: require BOTH volume_confirming > 0.5 AND (trend_up > 0.5 OR above_200dma > 0.5); drop the standalone above_50dma condition which adds almost no filter on large-caps. 3) Restore phase_confidence to 0.40 minimum \u2014 0.35 with a 1.3 R:R is too low a double-hurdle for a 5-day MTF hold where you need momentum to arrive fast. 4) Set a minimum R:R of 1.5 to compensate for ~0.45% round-trip MTF cost; at 1.3 a mediocre hold wipes the edge entirely. 5) Log every signal the scanner generates (even rejected ones) so the next review has signal frequency, false-positive rate, and missed-move data to work with.",
+   "raw": "{\"lessons\": \"Wyckoff_v3_WideOpen has zero trades, so there is no execution history to judge \\u2014 every parameter relaxation (lower phase_confidence, wider RSI band, looser ATR band, softened trend filter) was made speculatively to increase trade frequency, but we cannot confirm whether those relaxations actually capture good setups or merely lower the bar enough to let marginal ones through. The 'any-of' tier now contains six conditions, at least one of which (above_50dma > 0.5) is trivially true for a large fraction of large-caps in any uptrend, meaning the gate may be nearly open by default. With no closed trades, MTF interest drag, stop tightness, and exit-reason mix are all untestable \\u2014 the system is a hypothesis, not a tested strategy. The risk parameters (1.5% risk/trade, 5-day max, 70% cap) are structurally sound given MTF economics, but they protect nothing if entries never fire or fire on weak setups.\", \"diagnosis\": \"Zero trade sample \\u2014 the strategy has never been tested in live or paper execution, so v3's loosened parameters are unvalidated guesses. The 'any-of' block is so broad it provides almost no discriminatory power, and phase_confidence at 0.35 with R:R at 1.3 sets a bar low enough to admit noisy, low-conviction setups. We have no evidence this generates tradeable signals at all, let alone good ones.\", \"action\": \"TWEAK\", \"changes\": \"1) Run the strategy in paper mode for at least 15-20 trade signals before further parameter changes \\u2014 without a sample, every tweak is speculation. 2) Tighten the 'any-of' tier: require BOTH volume_confirming > 0.5 AND (trend_up > 0.5 OR above_200dma > 0.5); drop the standalone above_50dma condition which adds almost no filter on large-caps. 3) Restore phase_confidence to 0.40 minimum \\u2014 0.35 with a 1.3 R:R is too low a double-hurdle for a 5-day MTF hold where you need momentum to arrive fast. 4) Set a minimum R:R of 1.5 to compensate for ~0.45% round-trip MTF cost; at 1.3 a mediocre hold wipes the edge entirely. 5) Log every signal the scanner generates (even rejected ones) so the next review has signal frequency, false-positive rate, and missed-move data to work with.\", \"confidence\": 0.45}"
+  },
+  {
    "id": 6,
    "ts": "2026-08-03T16:28:59+05:30",
    "trigger": "auto",
@@ -253,6 +264,24 @@
   }
  ],
  "journal": [
+  {
+   "id": 64,
+   "ts": "2026-08-03T19:29:22+05:30",
+   "kind": "REVIEW",
+   "symbol": "",
+   "headline": "v2: TWEAK",
+   "detail": "Wyckoff_v3_WideOpen has zero trades, so there is no execution history to judge \u2014 every parameter relaxation (lower phase_confidence, wider RSI band, looser ATR band, softened trend filter) was made speculatively to increase trade frequency, but we cannot confirm whether those relaxations actually capture good setups or merely lower the bar enough to let marginal ones through. The 'any-of' tier now contains six conditions, at least one of which (above_50dma > 0.5) is trivially true for a large fraction of large-caps in any uptrend, meaning the gate may be nearly open by default. With no closed trades, MTF interest drag, stop tightness, and exit-reason mix are all untestable \u2014 the system is a hypothesis, not a tested strategy. The risk parameters (1.5% risk/trade, 5-day max, 70% cap) are structurally sound given MTF economics, but they protect nothing if entries never fire or fire on weak ",
+   "payload": "{}"
+  },
+  {
+   "id": 63,
+   "ts": "2026-08-03T19:29:22+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Mon 03 Aug 19:29 IST",
+   "payload": "{}"
+  },
   {
    "id": 62,
    "ts": "2026-08-03T16:28:59+05:30",
