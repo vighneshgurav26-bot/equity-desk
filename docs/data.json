@@ -348,6 +348,24 @@
  ],
  "journal": [
   {
+   "id": 162,
+   "ts": "2026-08-11T17:55:49+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 161,
+   "ts": "2026-08-11T17:55:49+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Tue 11 Aug 17:55 IST",
+   "payload": "{}"
+  },
+  {
    "id": 160,
    "ts": "2026-08-11T16:06:38+05:30",
    "kind": "ERROR",
@@ -1407,24 +1425,6 @@
    "symbol": "",
    "headline": "Market closed",
    "detail": "Thu 30 Jul 16:59 IST",
-   "payload": "{}"
-  },
-  {
-   "id": 42,
-   "ts": "2026-07-30T14:48:50+05:30",
-   "kind": "DEBATE",
-   "symbol": "NESTLEIND",
-   "headline": "NESTLEIND -> SKIP (0.62)",
-   "detail": "BULL: NESTLEIND is in a confirmed markup phase (0.75 confidence) with price at 1519, trading above both 50DMA (1427) and 200DMA (1326), confirming a healthy trend structure. Volume is confirming the move. RSI at 64 is in bullish momentum territory without being overbought \u2014 there is still room before 70+ exhaustion. The nearest support at 1500 (round number + structural level) is only 1.25% below, provi\n\nBEAR: The reward:risk of 1.63x sounds acceptable but is thin in practice \u2014 resistance at 1550 is a round number and likely to attract heavy selling, capping the upside exactly where you need it to run. The distance to target (2.04%) against a 2.31% ATR means a single adverse day can consume the entire expected move and stop you out. ATR volatility also means the 1500 support stop could easily get tested",
-   "payload": "{}"
-  },
-  {
-   "id": 41,
-   "ts": "2026-07-30T14:48:50+05:30",
-   "kind": "DEBATE",
-   "symbol": "SUNPHARMA",
-   "headline": "SUNPHARMA -> SKIP (0.62)",
-   "detail": "BULL: SUNPHARMA is in a confirmed uptrend, trading above both the 50DMA (1873) and 200DMA (1774), with Wyckoff markup phase active and volume confirming the move. Price has just cleared the round-number 2000 level, which is a classic breakout trigger \u2014 the stock is sitting at 2002.9, meaning 2000 now acts as fresh support. Resistance at 2100 is 4.85% away, giving a theoretical reward of ~4.85% against o\n\nBEAR: The support is dangerously close \u2014 0.14% below current price means the stock is essentially sitting ON the 2000 round-number support, not above it with a clean cushion. Any intraday wobble triggers the stop. Phase confidence is only 0.6, meaning the markup call is not high conviction. RSI at 67 is approaching overbought; a pullback is statistically more likely here than a clean ramp. The 4.85% res",
    "payload": "{}"
   }
  ]
