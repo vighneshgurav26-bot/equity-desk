@@ -364,6 +364,24 @@
  ],
  "journal": [
   {
+   "id": 180,
+   "ts": "2026-08-12T17:57:41+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 179,
+   "ts": "2026-08-12T17:57:41+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Wed 12 Aug 17:57 IST",
+   "payload": "{}"
+  },
+  {
    "id": 178,
    "ts": "2026-08-12T16:13:56+05:30",
    "kind": "ERROR",
@@ -1423,24 +1441,6 @@
    "symbol": "",
    "headline": "Market closed",
    "detail": "Mon 03 Aug 16:28 IST",
-   "payload": "{}"
-  },
-  {
-   "id": 60,
-   "ts": "2026-08-03T13:01:01+05:30",
-   "kind": "REVIEW",
-   "symbol": "",
-   "headline": "v2: TWEAK",
-   "detail": "WideOpen has zero trades, so there is nothing to diagnose from outcomes \u2014 no stops, no MAX_HOLD_5D exits, no MTF interest drag to measure. The strategy is brand-new (or freshly reset) and has not yet been exposed to the market. Loosening every filter simultaneously (phase_confidence, R:R, RSI band, ATR band, trend filter) before any live validation means the first batch of trades will be the experiment, with real capital at risk. The 'any-of' tier now includes six conditions of which only one needs to be true, making it nearly impossible to fail entry on that tier alone \u2014 this is the structural risk to watch. | No data to diagnose trade-level problems. The only diagnosable issue is pre-trade: WideOpen's filter relaxation is untested, and the 'any-of' gate is so permissive it is effectively no gate at all \u2014 almost any stock in the universe on almost any day will satisfy at least one of th",
-   "payload": "{}"
-  },
-  {
-   "id": 59,
-   "ts": "2026-08-03T13:01:01+05:30",
-   "kind": "DEBATE",
-   "symbol": "NESTLEIND",
-   "headline": "NESTLEIND -> SKIP (0.75)",
-   "detail": "BULL: NESTLEIND is above both the 50DMA (1430) and 200DMA (1329), trend is up, Wyckoff phase reads markup with volume confirming. Price at 1517 has 2.18% headroom to the nearest round resistance at 1550, which is ~2x the 1.12% distance to the nearest support at 1500. Reward:risk of 1.95 is borderline acceptable. If markup continues, a push to 1550 from 1517 yields ~2.2% gross \u2014 enough to clear the ~0.41\n\nBEAR: RSI at 70.48 is firmly overbought \u2014 this is a late-markup read, not an early-entry setup. The reward:risk of 1.95 barely clears the threshold and depends on price reaching 1550, a round number that will attract heavy supply; round numbers as resistance are inherently unreliable targets. The only listed resistances are round numbers (1500 was nearest support, 1550 is round above), meaning there are",
    "payload": "{}"
   }
  ]
