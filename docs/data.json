@@ -396,6 +396,24 @@
  ],
  "journal": [
   {
+   "id": 215,
+   "ts": "2026-08-14T17:55:56+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 214,
+   "ts": "2026-08-14T17:55:56+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Fri 14 Aug 17:55 IST",
+   "payload": "{}"
+  },
+  {
    "id": 213,
    "ts": "2026-08-14T16:10:11+05:30",
    "kind": "ERROR",
@@ -1455,24 +1473,6 @@
    "symbol": "NESTLEIND",
    "headline": "NESTLEIND -> SKIP (0.65)",
    "detail": "BULL: NESTLEIND is above both 50DMA (1434) and 200DMA (1331), trend is up, and volume is confirming the markup phase. Price at 1520.9 has already cleared the 1500 round-number level, which now acts as nearby support. The Wyckoff phase reads markup with 0.6 confidence, suggesting the move has further to go toward the 1550 resistance zone \u2014 a ~1.91% move away. ATR of 2.55% means a single average daily ran\n\nBEAR: RSI at 70.31 is overbought and in a zone where swing reversals are common, especially on a slow-moving FMCG defensive like Nestle. The reward:risk of 1.39 (1.91% to resistance vs 1.37% to support) is barely above 1:1 \u2014 after the 0.41% breakeven hurdle (interest + charges over 5 days), the net reward shrinks to ~1.5% while risk remains ~1.37%, making the adjusted R:R below 1.1. No hard resistance i",
-   "payload": "{}"
-  },
-  {
-   "id": 95,
-   "ts": "2026-08-06T12:03:36+05:30",
-   "kind": "DEBATE",
-   "symbol": "TATASTEEL",
-   "headline": "TATASTEEL -> SKIP (0.82)",
-   "detail": "BULL: Wyckoff accumulation phase (conf 0.55) with volume confirming suggests absorption of supply near 190-191 zone. RSI at 61.47 is constructive \u2014 not overbought, has room to push. Reward:risk of 2.02 to nearest levels nominally passes the screen. Support cluster at 187.9-190 is layered and close, offering a defined stop. If accumulation is genuine, a spring or test off 190 could propel price toward 19\n\nBEAR: This setup is deeply problematic for MTF swing economics. Distance to resistance is only 1.05% (193.0), while breakeven over 5 days including interest is 0.86% \u2014 leaving a net reward of barely 0.19% if price reaches the FIRST resistance. The 50 DMA (193.11) and 200 DMA (192.02) are both acting as overhead resistance within that same 1.05% band, making 193 a triple-layered ceiling: prior resistance",
-   "payload": "{}"
-  },
-  {
-   "id": 94,
-   "ts": "2026-08-06T12:03:36+05:30",
-   "kind": "DEBATE",
-   "symbol": "BAJFINANCE",
-   "headline": "BAJFINANCE -> SKIP (0.82)",
-   "detail": "BULL: Price is above both 50DMA (998) and 200DMA (973), confirming a structurally intact uptrend. RSI at 70.51 is elevated but not extreme for a momentum large-cap in markup. ATR of 2.58% means a single session could cover the 2.15% gap to resistance at 1176. The reward:risk ratio to levels is mathematically wide (15x) only because support is a mere 0.14% below \u2014 but resistance at 1176 is 2.15% away, wh\n\nBEAR: This is the attack: (1) Wyckoff phase is flagged as DISTRIBUTION with 0.55 confidence \u2014 the dominant signal is that smart money may be offloading into this up-trend, not accumulating. (2) Volume is non-confirming (volume_signal=neutral, volume_confirming=0.0) \u2014 a rally without volume in a potential distribution phase is a classic Wyckoff warning sign of supply absorption. (3) Support is only 0.14%",
    "payload": "{}"
   }
  ]
