@@ -596,6 +596,24 @@
  ],
  "journal": [
   {
+   "id": 410,
+   "ts": "2026-08-26T14:32:47+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 409,
+   "ts": "2026-08-26T14:32:47+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Wed 26 Aug 14:32 IST",
+   "payload": "{}"
+  },
+  {
    "id": 408,
    "ts": "2026-08-26T13:30:16+05:30",
    "kind": "ERROR",
@@ -1656,24 +1674,6 @@
    "headline": "review failed",
    "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
    "payload": "{}"
-  },
-  {
-   "id": 290,
-   "ts": "2026-08-19T14:35:07+05:30",
-   "kind": "SCAN",
-   "symbol": "",
-   "headline": "No entry setup",
-   "detail": "HDFCBANK:markdown rr=1.48 | AXISBANK:accumulation rr=0.62 | ITC:markdown rr=0.61 | BAJFINANCE:markup rr=0.66 | TATASTEEL:markdown rr=3.42 | TITAN:distribution rr=0.74 | WIPRO:accumulation rr=0.19 | POWERGRID:markdown rr=1.54",
-   "payload": "{}"
-  },
-  {
-   "id": 289,
-   "ts": "2026-08-19T14:35:07+05:30",
-   "kind": "SCREEN",
-   "symbol": "",
-   "headline": "Clean structure: ['HDFCBANK', 'AXISBANK', 'ITC', 'BAJFINANCE', 'TATASTEEL', 'TITAN', 'WIPRO', 'POWERGRID', 'NTPC', 'ASIANPAINT']",
-   "detail": "RELIANCE:dist/down s=3.49 X phase conf 0.4 | TATASTEEL:dist/down s=2.05 | LT:markup s=1.71 X phase conf 0.5 | NTPC:dist/down s=1.62 | NESTLEIND:markup s=1.38 X phase conf 0.5 | INFY:dist/down s=1.33 X phase conf 0.4 | HINDALCO:markup s=1.3 X phase conf 0.5 | POWERGRID:dist/down s=0.92 | HDFCBANK:dist/down s=0.89 | HCLTECH:dist/down s=0.74 X phase conf 0.4 | ULTRACEMCO:dist/down s=0.5 X phase conf 0.5 | TITAN:dist/down s=0.41",
-   "payload": "{\"ranking\": [{\"symbol\": \"RELIANCE\", \"phase\": \"dist/down\", \"score\": 3.49, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"TATASTEEL\", \"phase\": \"dist/down\", \"score\": 2.05, \"tradable\": true, \"why\": []}, {\"symbol\": \"LT\", \"phase\": \"markup\", \"score\": 1.71, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"NTPC\", \"phase\": \"dist/down\", \"score\": 1.62, \"tradable\": true, \"why\": []}, {\"symbol\": \"NESTLEIND\", \"phase\": \"markup\", \"score\": 1.38, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"INFY\", \"phase\": \"dist/down\", \"score\": 1.33, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"HINDALCO\", \"phase\": \"markup\", \"score\": 1.3, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"POWERGRID\", \"phase\": \"dist/down\", \"score\": 0.92, \"tradable\": true, \"why\": []}, {\"symbol\": \"HDFCBANK\", \"phase\": \"dist/down\", \"score\": 0.89, \"tradable\": true, \"why\": []}, {\"symbol\": \"HCLTECH\", \"phase\": \"dist/down\", \"score\": 0.74, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"ULTRACEMCO\", \"phase\": \"dist/down\", \"score\": 0.5, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"TITAN\", \"phase\": \"dist/down\", \"score\": 0.41, \"tradable\": true, \"why\": []}, {\"symbol\": \"BAJFINANCE\", \"phase\": \"markup\", \"score\": 0.4, \"tradable\": true, \"why\": []}, {\"symbol\": \"ITC\", \"phase\": \"dist/down\", \"score\": 0.37, \"tradable\": true, \"why\": []}, {\"symbol\": \"AXISBANK\", \"phase\": \"acc\", \"score\": 0.34, \"tradable\": true, \"why\": []}, {\"symbol\": \"BHARTIARTL\", \"phase\": \"dist/down\", \"score\": 0.26, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"SBIN\", \"phase\": \"markup\", \"score\": 0.15, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"MARUTI\", \"phase\": \"dist/down\", \"score\": 0.15, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"ICICIBANK\", \"phase\": \"dist/down\", \"score\": 0.14, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"WIPRO\", \"phase\": \"acc\", \"score\": 0.1, \"tradable\": true, \"why\": []}, {\"symbol\": \"TCS\", \"phase\": \"dist/down\", \"score\": 0.07, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"SUNPHARMA\", \"phase\": \"dist/down\", \"score\": 0.06, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"KOTAKBANK\", \"phase\": \"dist/down\", \"score\": 0.01, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"ASIANPAINT\", \"phase\": \"acc\", \"score\": 0.0, \"tradable\": true, \"why\": []}]}"
   }
  ]
 }
