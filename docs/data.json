@@ -596,6 +596,24 @@
  ],
  "journal": [
   {
+   "id": 414,
+   "ts": "2026-08-26T17:29:28+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 413,
+   "ts": "2026-08-26T17:29:28+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Wed 26 Aug 17:29 IST",
+   "payload": "{}"
+  },
+  {
    "id": 412,
    "ts": "2026-08-26T15:27:59+05:30",
    "kind": "ERROR",
@@ -1655,24 +1673,6 @@
    "symbol": "",
    "headline": "Market closed",
    "detail": "Wed 19 Aug 17:25 IST",
-   "payload": "{}"
-  },
-  {
-   "id": 294,
-   "ts": "2026-08-19T15:19:47+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 293,
-   "ts": "2026-08-19T15:19:47+05:30",
-   "kind": "SCAN",
-   "symbol": "",
-   "headline": "No entry setup",
-   "detail": "HDFCBANK:markdown rr=1.42 | AXISBANK:accumulation rr=0.48 | ITC:markdown rr=0.52 | BAJFINANCE:markup rr=0.83 | TATASTEEL:markdown rr=1.54 | TITAN:distribution rr=0.59 | WIPRO:accumulation rr=0.22 | POWERGRID:markdown rr=2.15",
    "payload": "{}"
   }
  ]
