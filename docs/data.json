@@ -596,6 +596,24 @@
  ],
  "journal": [
   {
+   "id": 422,
+   "ts": "2026-08-29T03:00:01+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 421,
+   "ts": "2026-08-29T03:00:01+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Sat 29 Aug 03:00 IST",
+   "payload": "{}"
+  },
+  {
    "id": 420,
    "ts": "2026-08-28T21:54:48+05:30",
    "kind": "ERROR",
@@ -1654,24 +1672,6 @@
    "kind": "ERROR",
    "symbol": "WIPRO",
    "headline": "debate WIPRO failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 302,
-   "ts": "2026-08-20T10:45:23+05:30",
-   "kind": "ERROR",
-   "symbol": "TITAN",
-   "headline": "debate TITAN failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 301,
-   "ts": "2026-08-20T10:45:23+05:30",
-   "kind": "ERROR",
-   "symbol": "AXISBANK",
-   "headline": "debate AXISBANK failed",
    "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
    "payload": "{}"
   }
