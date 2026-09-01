@@ -600,6 +600,24 @@
  ],
  "journal": [
   {
+   "id": 434,
+   "ts": "2026-09-01T21:01:44+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 433,
+   "ts": "2026-09-01T21:01:44+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Tue 01 Sep 21:01 IST",
+   "payload": "{}"
+  },
+  {
    "id": 432,
    "ts": "2026-09-01T19:44:55+05:30",
    "kind": "ERROR",
@@ -1658,24 +1676,6 @@
    "kind": "ERROR",
    "symbol": "",
    "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 314,
-   "ts": "2026-08-20T13:19:43+05:30",
-   "kind": "ERROR",
-   "symbol": "WIPRO",
-   "headline": "debate WIPRO failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 313,
-   "ts": "2026-08-20T13:19:43+05:30",
-   "kind": "ERROR",
-   "symbol": "ICICIBANK",
-   "headline": "debate ICICIBANK failed",
    "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
    "payload": "{}"
   }
