@@ -616,6 +616,24 @@
  ],
  "journal": [
   {
+   "id": 463,
+   "ts": "2026-09-07T22:08:23+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 462,
+   "ts": "2026-09-07T22:08:23+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Mon 07 Sep 22:08 IST",
+   "payload": "{}"
+  },
+  {
    "id": 461,
    "ts": "2026-09-07T20:33:47+05:30",
    "kind": "ERROR",
@@ -1676,24 +1694,6 @@
    "headline": "Clean structure: ['HDFCBANK', 'ICICIBANK', 'AXISBANK', 'ITC', 'BAJFINANCE', 'TATASTEEL', 'TITAN', 'WIPRO', 'POWERGRID', 'NTPC', 'ASIANPAINT']",
    "detail": "HCLTECH:dist/down s=4.41 X phase conf 0.4 | ICICIBANK:markup s=2.47 | HINDALCO:markup s=1.72 X phase conf 0.5 | INFY:dist/down s=1.6 X phase conf 0.4 | ASIANPAINT:acc s=1.42 | TATASTEEL:dist/down s=0.95 | WIPRO:acc s=0.41 | SBIN:dist/down s=0.4 X phase conf 0.4 | KOTAKBANK:dist/down s=0.4 X phase conf 0.4 | HDFCBANK:dist/down s=0.38 | ULTRACEMCO:dist/down s=0.31 X phase conf 0.4 | NTPC:dist/down s=0.23",
    "payload": "{\"ranking\": [{\"symbol\": \"HCLTECH\", \"phase\": \"dist/down\", \"score\": 4.41, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"ICICIBANK\", \"phase\": \"markup\", \"score\": 2.47, \"tradable\": true, \"why\": []}, {\"symbol\": \"HINDALCO\", \"phase\": \"markup\", \"score\": 1.72, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"INFY\", \"phase\": \"dist/down\", \"score\": 1.6, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"ASIANPAINT\", \"phase\": \"acc\", \"score\": 1.42, \"tradable\": true, \"why\": []}, {\"symbol\": \"TATASTEEL\", \"phase\": \"dist/down\", \"score\": 0.95, \"tradable\": true, \"why\": []}, {\"symbol\": \"WIPRO\", \"phase\": \"acc\", \"score\": 0.41, \"tradable\": true, \"why\": []}, {\"symbol\": \"SBIN\", \"phase\": \"dist/down\", \"score\": 0.4, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"KOTAKBANK\", \"phase\": \"dist/down\", \"score\": 0.4, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"HDFCBANK\", \"phase\": \"dist/down\", \"score\": 0.38, \"tradable\": true, \"why\": []}, {\"symbol\": \"ULTRACEMCO\", \"phase\": \"dist/down\", \"score\": 0.31, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"NTPC\", \"phase\": \"dist/down\", \"score\": 0.23, \"tradable\": true, \"why\": []}, {\"symbol\": \"TITAN\", \"phase\": \"markup\", \"score\": 0.19, \"tradable\": true, \"why\": []}, {\"symbol\": \"BAJFINANCE\", \"phase\": \"markup\", \"score\": 0.18, \"tradable\": true, \"why\": []}, {\"symbol\": \"AXISBANK\", \"phase\": \"acc\", \"score\": 0.17, \"tradable\": true, \"why\": []}, {\"symbol\": \"BHARTIARTL\", \"phase\": \"dist/down\", \"score\": 0.1, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"MARUTI\", \"phase\": \"dist/down\", \"score\": 0.08, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"LT\", \"phase\": \"dist/down\", \"score\": 0.05, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"ITC\", \"phase\": \"dist/down\", \"score\": 0.03, \"tradable\": true, \"why\": []}, {\"symbol\": \"TCS\", \"phase\": \"dist/down\", \"score\": 0.02, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"SUNPHARMA\", \"phase\": \"dist/down\", \"score\": 0.01, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"RELIANCE\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"NESTLEIND\", \"phase\": \"markup\", \"score\": 0.0, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"POWERGRID\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}]}"
-  },
-  {
-   "id": 343,
-   "ts": "2026-08-21T14:21:07+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 342,
-   "ts": "2026-08-21T14:21:07+05:30",
-   "kind": "SCAN",
-   "symbol": "",
-   "headline": "No entry setup",
-   "detail": "HDFCBANK:markdown rr=0.28 | ICICIBANK:markup rr=3.73 | AXISBANK:accumulation rr=0.02 | ITC:markdown rr=0.07 | BAJFINANCE:markup rr=0.28 | TATASTEEL:markdown rr=1.28 | TITAN:markup rr=0.48 | WIPRO:accumulation rr=8.0",
-   "payload": "{}"
   }
  ]
 }
