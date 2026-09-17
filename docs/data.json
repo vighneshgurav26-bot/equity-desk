@@ -648,6 +648,24 @@
  ],
  "journal": [
   {
+   "id": 523,
+   "ts": "2026-09-17T21:07:55+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 522,
+   "ts": "2026-09-17T21:07:55+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Thu 17 Sep 21:07 IST",
+   "payload": "{}"
+  },
+  {
    "id": 521,
    "ts": "2026-09-17T19:54:06+05:30",
    "kind": "ERROR",
@@ -1703,24 +1721,6 @@
   {
    "id": 404,
    "ts": "2026-08-26T11:29:46+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 403,
-   "ts": "2026-08-26T11:29:46+05:30",
-   "kind": "IDLE",
-   "symbol": "",
-   "headline": "Market closed",
-   "detail": "Wed 26 Aug 11:29 IST",
-   "payload": "{}"
-  },
-  {
-   "id": 402,
-   "ts": "2026-08-26T10:47:12+05:30",
    "kind": "ERROR",
    "symbol": "",
    "headline": "review failed",
