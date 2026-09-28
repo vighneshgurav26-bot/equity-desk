@@ -672,6 +672,24 @@
  ],
  "journal": [
   {
+   "id": 565,
+   "ts": "2026-09-28T16:11:22+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 564,
+   "ts": "2026-09-28T16:11:22+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Mon 28 Sep 16:11 IST",
+   "payload": "{}"
+  },
+  {
    "id": 563,
    "ts": "2026-09-25T21:24:58+05:30",
    "kind": "ERROR",
@@ -1731,24 +1749,6 @@
    "symbol": "",
    "headline": "Market closed",
    "detail": "Thu 03 Sep 18:31 IST",
-   "payload": "{}"
-  },
-  {
-   "id": 445,
-   "ts": "2026-09-03T14:12:40+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 444,
-   "ts": "2026-09-03T14:12:40+05:30",
-   "kind": "ERROR",
-   "symbol": "HCLTECH",
-   "headline": "debate HCLTECH failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
    "payload": "{}"
   }
  ]
