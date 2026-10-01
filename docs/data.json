@@ -672,6 +672,24 @@
  ],
  "journal": [
   {
+   "id": 579,
+   "ts": "2026-10-01T22:58:30+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 578,
+   "ts": "2026-10-01T22:58:30+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Thu 01 Oct 22:58 IST",
+   "payload": "{}"
+  },
+  {
    "id": 577,
    "ts": "2026-10-01T16:17:16+05:30",
    "kind": "ERROR",
@@ -1731,24 +1749,6 @@
    "symbol": "",
    "headline": "Market closed",
    "detail": "Mon 07 Sep 20:33 IST",
-   "payload": "{}"
-  },
-  {
-   "id": 459,
-   "ts": "2026-09-07T14:35:13+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 458,
-   "ts": "2026-09-07T14:35:13+05:30",
-   "kind": "SCAN",
-   "symbol": "",
-   "headline": "No entry setup",
-   "detail": "HDFCBANK:markdown rr=1.99 | ICICIBANK:markup rr=0.0 | SBIN:accumulation rr=4.13 | AXISBANK:markdown rr=1.09 | KOTAKBANK:distribution rr=0.33 | BHARTIARTL:markdown rr=0.0 | ITC:markdown rr=1.37 | MARUTI:markdown rr=0.37",
    "payload": "{}"
   }
  ]
