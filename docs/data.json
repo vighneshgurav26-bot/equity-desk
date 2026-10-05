@@ -672,6 +672,24 @@
  ],
  "journal": [
   {
+   "id": 585,
+   "ts": "2026-10-05T16:45:55+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 584,
+   "ts": "2026-10-05T16:45:55+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Mon 05 Oct 16:45 IST",
+   "payload": "{}"
+  },
+  {
    "id": 583,
    "ts": "2026-10-02T22:18:22+05:30",
    "kind": "ERROR",
@@ -1732,24 +1750,6 @@
    "headline": "debate NESTLEIND failed",
    "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
    "payload": "{}"
-  },
-  {
-   "id": 465,
-   "ts": "2026-09-08T14:12:11+05:30",
-   "kind": "ERROR",
-   "symbol": "KOTAKBANK",
-   "headline": "debate KOTAKBANK failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 464,
-   "ts": "2026-09-08T14:12:11+05:30",
-   "kind": "SCREEN",
-   "symbol": "",
-   "headline": "Clean structure: ['HDFCBANK', 'SBIN', 'AXISBANK', 'KOTAKBANK', 'BHARTIARTL', 'ITC', 'MARUTI', 'TATASTEEL', 'SUNPHARMA', 'TITAN', 'NESTLEIND', 'WIPRO', 'ULTRACEMCO', 'POWERGRID', 'NTPC', 'ASIANPAINT']",
-   "detail": "SBIN:acc s=6.92 | NTPC:dist/down s=4.9 | HDFCBANK:dist/down s=3.37 | NESTLEIND:acc s=2.79 | WIPRO:dist/down s=2.19 | KOTAKBANK:dist/down s=1.39 | POWERGRID:dist/down s=1.06 | ICICIBANK:dist/down s=0.62 X phase conf 0.4 | TCS:dist/down s=0.61 X phase conf 0.4 | LT:dist/down s=0.52 X phase conf 0.5 | HINDALCO:markup s=0.33 X phase conf 0.5 | ASIANPAINT:acc s=0.32",
-   "payload": "{\"ranking\": [{\"symbol\": \"SBIN\", \"phase\": \"acc\", \"score\": 6.92, \"tradable\": true, \"why\": []}, {\"symbol\": \"NTPC\", \"phase\": \"dist/down\", \"score\": 4.9, \"tradable\": true, \"why\": []}, {\"symbol\": \"HDFCBANK\", \"phase\": \"dist/down\", \"score\": 3.37, \"tradable\": true, \"why\": []}, {\"symbol\": \"NESTLEIND\", \"phase\": \"acc\", \"score\": 2.79, \"tradable\": true, \"why\": []}, {\"symbol\": \"WIPRO\", \"phase\": \"dist/down\", \"score\": 2.19, \"tradable\": true, \"why\": []}, {\"symbol\": \"KOTAKBANK\", \"phase\": \"dist/down\", \"score\": 1.39, \"tradable\": true, \"why\": []}, {\"symbol\": \"POWERGRID\", \"phase\": \"dist/down\", \"score\": 1.06, \"tradable\": true, \"why\": []}, {\"symbol\": \"ICICIBANK\", \"phase\": \"dist/down\", \"score\": 0.62, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"TCS\", \"phase\": \"dist/down\", \"score\": 0.61, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"LT\", \"phase\": \"dist/down\", \"score\": 0.52, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"HINDALCO\", \"phase\": \"markup\", \"score\": 0.33, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"ASIANPAINT\", \"phase\": \"acc\", \"score\": 0.32, \"tradable\": true, \"why\": []}, {\"symbol\": \"HCLTECH\", \"phase\": \"dist/down\", \"score\": 0.27, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"INFY\", \"phase\": \"dist/down\", \"score\": 0.25, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"MARUTI\", \"phase\": \"dist/down\", \"score\": 0.17, \"tradable\": true, \"why\": []}, {\"symbol\": \"BAJFINANCE\", \"phase\": \"dist/down\", \"score\": 0.13, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"AXISBANK\", \"phase\": \"dist/down\", \"score\": 0.08, \"tradable\": true, \"why\": []}, {\"symbol\": \"SUNPHARMA\", \"phase\": \"acc\", \"score\": 0.07, \"tradable\": true, \"why\": []}, {\"symbol\": \"RELIANCE\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"BHARTIARTL\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"ITC\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"TATASTEEL\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"TITAN\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"ULTRACEMCO\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}]}"
   }
  ]
 }
