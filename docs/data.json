@@ -672,6 +672,24 @@
  ],
  "journal": [
   {
+   "id": 591,
+   "ts": "2026-10-07T16:24:49+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 590,
+   "ts": "2026-10-07T16:24:49+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Wed 07 Oct 16:24 IST",
+   "payload": "{}"
+  },
+  {
    "id": 589,
    "ts": "2026-10-06T22:52:59+05:30",
    "kind": "ERROR",
@@ -1732,24 +1750,6 @@
    "headline": "Clean structure: ['HDFCBANK', 'INFY', 'SBIN', 'AXISBANK', 'KOTAKBANK', 'BHARTIARTL', 'ITC', 'MARUTI', 'SUNPHARMA', 'TITAN', 'NESTLEIND', 'WIPRO', 'ULTRACEMCO', 'POWERGRID', 'NTPC', 'ASIANPAINT']",
    "detail": "TITAN:dist/down s=4.69 | NTPC:dist/down s=2.85 | INFY:dist/down s=2.06 | LT:dist/down s=1.82 X phase conf 0.5 | SBIN:dist/down s=1.64 | ITC:dist/down s=1.4 | TCS:dist/down s=1.29 X phase conf 0.5 | KOTAKBANK:dist/down s=1.1 | MARUTI:dist/down s=1.05 | SUNPHARMA:acc s=0.97 | BHARTIARTL:dist/down s=0.78 | TATASTEEL:dist/down s=0.53 X phase conf 0.4",
    "payload": "{\"ranking\": [{\"symbol\": \"TITAN\", \"phase\": \"dist/down\", \"score\": 4.69, \"tradable\": true, \"why\": []}, {\"symbol\": \"NTPC\", \"phase\": \"dist/down\", \"score\": 2.85, \"tradable\": true, \"why\": []}, {\"symbol\": \"INFY\", \"phase\": \"dist/down\", \"score\": 2.06, \"tradable\": true, \"why\": []}, {\"symbol\": \"LT\", \"phase\": \"dist/down\", \"score\": 1.82, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"SBIN\", \"phase\": \"dist/down\", \"score\": 1.64, \"tradable\": true, \"why\": []}, {\"symbol\": \"ITC\", \"phase\": \"dist/down\", \"score\": 1.4, \"tradable\": true, \"why\": []}, {\"symbol\": \"TCS\", \"phase\": \"dist/down\", \"score\": 1.29, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"KOTAKBANK\", \"phase\": \"dist/down\", \"score\": 1.1, \"tradable\": true, \"why\": []}, {\"symbol\": \"MARUTI\", \"phase\": \"dist/down\", \"score\": 1.05, \"tradable\": true, \"why\": []}, {\"symbol\": \"SUNPHARMA\", \"phase\": \"acc\", \"score\": 0.97, \"tradable\": true, \"why\": []}, {\"symbol\": \"BHARTIARTL\", \"phase\": \"dist/down\", \"score\": 0.78, \"tradable\": true, \"why\": []}, {\"symbol\": \"TATASTEEL\", \"phase\": \"dist/down\", \"score\": 0.53, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"HINDALCO\", \"phase\": \"markup\", \"score\": 0.46, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"WIPRO\", \"phase\": \"dist/down\", \"score\": 0.25, \"tradable\": true, \"why\": []}, {\"symbol\": \"POWERGRID\", \"phase\": \"dist/down\", \"score\": 0.2, \"tradable\": true, \"why\": []}, {\"symbol\": \"ICICIBANK\", \"phase\": \"dist/down\", \"score\": 0.17, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"NESTLEIND\", \"phase\": \"acc\", \"score\": 0.13, \"tradable\": true, \"why\": []}, {\"symbol\": \"HCLTECH\", \"phase\": \"dist/down\", \"score\": 0.12, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"RELIANCE\", \"phase\": \"dist/down\", \"score\": 0.1, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"HDFCBANK\", \"phase\": \"dist/down\", \"score\": 0.08, \"tradable\": true, \"why\": []}, {\"symbol\": \"BAJFINANCE\", \"phase\": \"dist/down\", \"score\": 0.03, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"AXISBANK\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"ULTRACEMCO\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"ASIANPAINT\", \"phase\": \"acc\", \"score\": 0.0, \"tradable\": true, \"why\": []}]}"
-  },
-  {
-   "id": 471,
-   "ts": "2026-09-08T20:47:22+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 470,
-   "ts": "2026-09-08T20:47:22+05:30",
-   "kind": "IDLE",
-   "symbol": "",
-   "headline": "Market closed",
-   "detail": "Tue 08 Sep 20:47 IST",
-   "payload": "{}"
   }
  ]
 }
