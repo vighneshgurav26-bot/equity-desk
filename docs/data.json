@@ -672,6 +672,24 @@
  ],
  "journal": [
   {
+   "id": 595,
+   "ts": "2026-10-08T16:42:02+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 594,
+   "ts": "2026-10-08T16:42:02+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Thu 08 Oct 16:42 IST",
+   "payload": "{}"
+  },
+  {
    "id": 593,
    "ts": "2026-10-07T23:26:47+05:30",
    "kind": "ERROR",
@@ -1730,24 +1748,6 @@
    "kind": "ERROR",
    "symbol": "",
    "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 475,
-   "ts": "2026-09-09T14:18:16+05:30",
-   "kind": "ERROR",
-   "symbol": "TITAN",
-   "headline": "debate TITAN failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 474,
-   "ts": "2026-09-09T14:18:16+05:30",
-   "kind": "ERROR",
-   "symbol": "SUNPHARMA",
-   "headline": "debate SUNPHARMA failed",
    "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
    "payload": "{}"
   }
