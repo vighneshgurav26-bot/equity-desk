@@ -672,6 +672,24 @@
  ],
  "journal": [
   {
+   "id": 601,
+   "ts": "2026-10-09T23:01:49+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 600,
+   "ts": "2026-10-09T23:01:49+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Fri 09 Oct 23:01 IST",
+   "payload": "{}"
+  },
+  {
    "id": 599,
    "ts": "2026-10-09T16:41:02+05:30",
    "kind": "ERROR",
@@ -1731,24 +1749,6 @@
    "symbol": "",
    "headline": "No entry setup",
    "detail": "RELIANCE:markdown rr=0.0 | HDFCBANK:markdown rr=0.19 | ICICIBANK:accumulation rr=0.84 | INFY:markdown rr=3.38 | SBIN:markdown rr=6.7 | AXISBANK:markdown rr=0.18 | KOTAKBANK:distribution rr=0.0 | BHARTIARTL:markdown rr=2.03",
-   "payload": "{}"
-  },
-  {
-   "id": 481,
-   "ts": "2026-09-10T14:15:54+05:30",
-   "kind": "SCREEN",
-   "symbol": "",
-   "headline": "Clean structure: ['RELIANCE', 'HDFCBANK', 'ICICIBANK', 'INFY', 'SBIN', 'AXISBANK', 'KOTAKBANK', 'BHARTIARTL', 'ITC', 'MARUTI', 'TATASTEEL', 'SUNPHARMA', 'TITAN', 'NESTLEIND', 'WIPRO', 'ULTRACEMCO', 'POWERGRID', 'NTPC', 'ASIANPAINT']",
-   "detail": "HCLTECH:dist/down s=4.79 X phase conf 0.5 | SBIN:dist/down s=4.02 | INFY:dist/down s=2.03 | ULTRACEMCO:dist/down s=1.3 | LT:dist/down s=1.23 X phase conf 0.5 | BHARTIARTL:dist/down s=1.22 | TATASTEEL:dist/down s=0.75 | ICICIBANK:acc s=0.46 | HINDALCO:markup s=0.4 X phase conf 0.5 | WIPRO:dist/down s=0.35 | TCS:dist/down s=0.27 X phase conf 0.5 | BAJFINANCE:dist/down s=0.22 X phase conf 0.4",
-   "payload": "{\"ranking\": [{\"symbol\": \"HCLTECH\", \"phase\": \"dist/down\", \"score\": 4.79, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"SBIN\", \"phase\": \"dist/down\", \"score\": 4.02, \"tradable\": true, \"why\": []}, {\"symbol\": \"INFY\", \"phase\": \"dist/down\", \"score\": 2.03, \"tradable\": true, \"why\": []}, {\"symbol\": \"ULTRACEMCO\", \"phase\": \"dist/down\", \"score\": 1.3, \"tradable\": true, \"why\": []}, {\"symbol\": \"LT\", \"phase\": \"dist/down\", \"score\": 1.23, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"BHARTIARTL\", \"phase\": \"dist/down\", \"score\": 1.22, \"tradable\": true, \"why\": []}, {\"symbol\": \"TATASTEEL\", \"phase\": \"dist/down\", \"score\": 0.75, \"tradable\": true, \"why\": []}, {\"symbol\": \"ICICIBANK\", \"phase\": \"acc\", \"score\": 0.46, \"tradable\": true, \"why\": []}, {\"symbol\": \"HINDALCO\", \"phase\": \"markup\", \"score\": 0.4, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"WIPRO\", \"phase\": \"dist/down\", \"score\": 0.35, \"tradable\": true, \"why\": []}, {\"symbol\": \"TCS\", \"phase\": \"dist/down\", \"score\": 0.27, \"tradable\": false, \"why\": [\"phase conf 0.5\"]}, {\"symbol\": \"BAJFINANCE\", \"phase\": \"dist/down\", \"score\": 0.22, \"tradable\": false, \"why\": [\"phase conf 0.4\"]}, {\"symbol\": \"POWERGRID\", \"phase\": \"dist/down\", \"score\": 0.22, \"tradable\": true, \"why\": []}, {\"symbol\": \"TITAN\", \"phase\": \"markup\", \"score\": 0.12, \"tradable\": true, \"why\": []}, {\"symbol\": \"HDFCBANK\", \"phase\": \"dist/down\", \"score\": 0.11, \"tradable\": true, \"why\": []}, {\"symbol\": \"AXISBANK\", \"phase\": \"dist/down\", \"score\": 0.11, \"tradable\": true, \"why\": []}, {\"symbol\": \"SUNPHARMA\", \"phase\": \"acc\", \"score\": 0.03, \"tradable\": true, \"why\": []}, {\"symbol\": \"ASIANPAINT\", \"phase\": \"acc\", \"score\": 0.01, \"tradable\": true, \"why\": []}, {\"symbol\": \"RELIANCE\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"KOTAKBANK\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"ITC\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"MARUTI\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"NESTLEIND\", \"phase\": \"acc\", \"score\": 0.0, \"tradable\": true, \"why\": []}, {\"symbol\": \"NTPC\", \"phase\": \"dist/down\", \"score\": 0.0, \"tradable\": true, \"why\": []}]}"
-  },
-  {
-   "id": 480,
-   "ts": "2026-09-09T20:45:27+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
    "payload": "{}"
   }
  ]
