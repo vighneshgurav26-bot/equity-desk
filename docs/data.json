@@ -708,6 +708,24 @@
  ],
  "journal": [
   {
+   "id": 679,
+   "ts": "2026-10-27T22:19:36+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 678,
+   "ts": "2026-10-27T22:19:36+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Tue 27 Oct 22:19 IST",
+   "payload": "{}"
+  },
+  {
    "id": 677,
    "ts": "2026-10-27T21:03:06+05:30",
    "kind": "ERROR",
@@ -1767,24 +1785,6 @@
    "symbol": "",
    "headline": "Market closed",
    "detail": "Fri 25 Sep 20:12 IST",
-   "payload": "{}"
-  },
-  {
-   "id": 559,
-   "ts": "2026-09-25T14:58:49+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 558,
-   "ts": "2026-09-25T14:58:49+05:30",
-   "kind": "SCAN",
-   "symbol": "",
-   "headline": "No entry setup",
-   "detail": "RELIANCE:markdown rr=0.58 | HDFCBANK:accumulation rr=0.61 | ICICIBANK:accumulation rr=3.03 | INFY:markdown rr=0.24 | TCS:markdown rr=1.33 | SBIN:markdown rr=0.26 | AXISBANK:markdown rr=1.5 | BHARTIARTL:markdown rr=1.29",
    "payload": "{}"
   }
  ]
