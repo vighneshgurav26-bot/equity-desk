@@ -708,6 +708,24 @@
  ],
  "journal": [
   {
+   "id": 747,
+   "ts": "2026-11-20T01:06:03+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 746,
+   "ts": "2026-11-20T01:06:03+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Fri 20 Nov 01:06 IST",
+   "payload": "{}"
+  },
+  {
    "id": 745,
    "ts": "2026-11-19T18:06:34+05:30",
    "kind": "ERROR",
@@ -1767,24 +1785,6 @@
    "symbol": "",
    "headline": "Market closed",
    "detail": "Fri 16 Oct 19:18 IST",
-   "payload": "{}"
-  },
-  {
-   "id": 627,
-   "ts": "2026-10-16T14:20:15+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 626,
-   "ts": "2026-10-16T14:20:15+05:30",
-   "kind": "ERROR",
-   "symbol": "NESTLEIND",
-   "headline": "debate NESTLEIND failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
    "payload": "{}"
   }
  ]
