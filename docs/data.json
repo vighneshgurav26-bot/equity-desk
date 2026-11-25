@@ -708,6 +708,24 @@
  ],
  "journal": [
   {
+   "id": 761,
+   "ts": "2026-11-25T19:29:04+05:30",
+   "kind": "ERROR",
+   "symbol": "",
+   "headline": "review failed",
+   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
+   "payload": "{}"
+  },
+  {
+   "id": 760,
+   "ts": "2026-11-25T19:29:04+05:30",
+   "kind": "IDLE",
+   "symbol": "",
+   "headline": "Market closed",
+   "detail": "Wed 25 Nov 19:29 IST",
+   "payload": "{}"
+  },
+  {
    "id": 759,
    "ts": "2026-11-25T02:58:17+05:30",
    "kind": "ERROR",
@@ -1767,24 +1785,6 @@
    "symbol": "",
    "headline": "Market closed",
    "detail": "Tue 20 Oct 19:56 IST",
-   "payload": "{}"
-  },
-  {
-   "id": 641,
-   "ts": "2026-10-20T14:46:06+05:30",
-   "kind": "ERROR",
-   "symbol": "",
-   "headline": "review failed",
-   "detail": "401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages",
-   "payload": "{}"
-  },
-  {
-   "id": 640,
-   "ts": "2026-10-20T14:46:06+05:30",
-   "kind": "SCAN",
-   "symbol": "",
-   "headline": "No entry setup",
-   "detail": "RELIANCE:markdown rr=9.18 | TCS:distribution rr=0.2 | SBIN:markdown rr=0.88 | KOTAKBANK:distribution rr=1.27 | LT:markdown rr=1.81 | ITC:markdown rr=9.52 | MARUTI:markdown rr=1.38 | TATASTEEL:markdown rr=0.1",
    "payload": "{}"
   }
  ]
